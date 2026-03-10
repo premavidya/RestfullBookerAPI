@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T13:24:30 IST" name="Default suite" finished-at="2026-03-10T13:24:39 IST" duration-ms="8793">
+    <groups>
+    </groups>
+    <test started-at="2026-03-10T13:24:30 IST" name="Default test" finished-at="2026-03-10T13:24:39 IST" duration-ms="8793">
+      <class name="booking.BookingTest">
+        <test-method signature="generateToken()[pri:0, instance:booking.BookingTest@1d296da]" started-at="2026-03-10T13:24:30 IST" name="generateToken" finished-at="2026-03-10T13:24:35 IST" duration-ms="4404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateToken -->
+        <test-method signature="getAllBookingIds()[pri:0, instance:booking.BookingTest@1d296da]" started-at="2026-03-10T13:24:35 IST" name="getAllBookingIds" finished-at="2026-03-10T13:24:36 IST" duration-ms="1554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllBookingIds -->
+        <test-method signature="createBooking()[pri:0, instance:booking.BookingTest@1d296da]" started-at="2026-03-10T13:24:36 IST" name="createBooking" finished-at="2026-03-10T13:24:37 IST" depends-on-methods="booking.BookingTest.generateToken" duration-ms="1257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBooking -->
+        <test-method signature="getBookingById()[pri:0, instance:booking.BookingTest@1d296da]" started-at="2026-03-10T13:24:37 IST" name="getBookingById" finished-at="2026-03-10T13:24:39 IST" depends-on-methods="booking.BookingTest.generateToken, booking.BookingTest.createBooking" duration-ms="1507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBookingById -->
+      </class> <!-- booking.BookingTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
