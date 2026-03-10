@@ -8,10 +8,10 @@ import static io.restassured.RestAssured.*;
 
 import java.util.List;
 
-public class GetListOfDogBreed {
+public class GetListOfDogBreedTest {
 
 	@Test
-	public void getListOfDogBreeds()
+	public void getListOfDogBreedsTest()
 	{
 		Response resp= given()
 		

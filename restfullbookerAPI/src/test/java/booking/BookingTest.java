@@ -19,7 +19,7 @@ public class BookingTest {
 	static String token="";
 	static int id=0;
 	@Test
-	public void generateToken()
+	public void generateTokenTest()
 	{
 		HashMap<String, String> mobj = new HashMap<String, String>();
 		mobj.put("username","admin");
@@ -36,8 +36,8 @@ public class BookingTest {
 		
 	}
 	
-	@Test(dependsOnMethods = "generateToken")
-	public void createBooking()
+	@Test(dependsOnMethods = "generateTokenTest")
+	public void createBookingTest()
 	{
 		Bookingdates date=new Bookingdates("2026-01-01","2026-01-01");
 		
@@ -53,8 +53,8 @@ public class BookingTest {
 		 id=resp.jsonPath().get("bookingid");
 		 System.out.println(id);
 	}
-	@Test(dependsOnMethods={"createBooking","generateToken"})
-	public void getBookingById()
+	@Test(dependsOnMethods={"createBookingTest","generateTokenTest"})
+	public void getBookingByIdTest()
 	{
 		given()
 		.auth().oauth2(token)
@@ -66,7 +66,7 @@ public class BookingTest {
 		.statusCode(200).log().all();
 	}
 	@Test(enabled=true)
-	public void getAllBookingIds()
+	public void getAllBookingIdsTest()
 	{
 		given()
 		.log().all()
